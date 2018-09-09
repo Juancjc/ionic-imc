@@ -1,0 +1,85 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>IMC
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+        
+      <ion-item>
+        <ion-label floating>Nome</ion-label>
+        <ion-input type="text" [(ngModel)]="nome"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating >Sexo</ion-label>
+        <ion-select [(ngModel)]="sexo">
+          <ion-option value="f">Feminino</ion-option>
+          <ion-option value="m">Masculino</ion-option>
+        </ion-select>
+      </ion-item>
+        
+      <ion-item>
+        <ion-label floating>Você nasceu em</ion-label>
+        <ion-datetime type="date" [(ngModel)]="dataNascimento" displayFormat="DD/MM/YYYY" >
+        </ion-datetime>
+      </ion-item>
+
+        <ion-item>
+          <ion-label floating>Peso</ion-label>
+          <ion-input type="number" [(ngModel)]="peso"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label floating>Altura</ion-label>
+          <ion-input type="number" [(ngModel)]="altura"></ion-input>
+        </ion-item>
+
+        
+      
+      </ion-list>
+
+      <button ion-button full (click)="calcular()" >Calcular IMC</button>
+      
+
+  
+    <ion-card *ngIf="msg">
+
+          <ion-card-header>
+             Olá {{nome}} 
+          </ion-card-header>
+        
+
+          <ion-card-content>
+             {{msg}}
+          </ion-card-content>
+
+    </ion-card>
+
+<!--
+
+  
+    <ion-card *ngfor="let pessoa of pessoas">
+
+          <ion-card-header> 
+            <h2>{{ pessoa.imc }}<h2>
+             Olá {{nome}} 
+          </ion-card-header>
+
+          <ion-card-content>
+             <p>Peso: {{ pessoa.peso }}</p>
+             <p>Altura: {{ pessoa.altura }}</p>
+             <p>IMC: {{ pessoa.imc }}</p>
+
+          </ion-card-content>
+
+    </ion-card>
+
+  -->
+</ion-content>

@@ -1,0 +1,118 @@
+
+/*****************************************************/
+/*   Author:  Gabriel M Dias (gabrielmd@gmail.com)   */
+/*   Date:    Sep 06, 2009                           */
+/*****************************************************/
+
+body {margin: 0; padding: 0px; font-family: Arial, tahoma, verdana, sans-serif;  background:url(bg.jpg) left top; color:#2c2c2c; border-top:10px #1b6b25 solid;}
+form, h1, h2, h3{ margin:0; padding:0; }
+img { border:none; }
+
+li{font-size:1.2em; line-height:1.8em;}
+
+a, a:visited{ color:blue; }
+a:hover{ text-decoration:none; }
+
+table{ border:1pt solid; border-spacing:0; }
+td{ line-height:20px; padding:5px; }
+thead tr td{ background-color:#ddd; font-weight:bold; }
+
+#header-position { background-color:#fff; width:100%; height:97px; }
+	#header { width:950px; display:block; margin:0 auto; height:97px;}
+	#header h1 { margin:0; padding:0; float:left; }
+	#header h1 a { float:left; width:204px; height:52px; text-indent:-9000px; overflow:hidden; margin-top:25px; background:url(header-title.png) no-repeat left top; }
+
+ul.nav-main{ list-style:none; margin:0; padding:0; width:690px; float:right; padding-top:25px;}
+	ul.nav-main li{ float:left; font-size:1em; width:172px; }
+		ul.nav-main li a{ text-decoration:none; color:#696161; font-weight:bold;}
+
+h2{ }
+.h2-likes{ padding-top:5px; position:absolute; width:210px; left:350px; top:0; }
+
+#main-position { width:100%; float:left; background:url(header_bg.png) repeat-x left top; padding:20px 0 0 0; }
+#content { width:950px; margin:0 auto; position:relative; min-height:605px;}
+.content-text{ position:relative; }
+
+#form-imc, #extra { padding:0px 10px; float:left; width:550px; margin:0px; position:relative; }
+#extra h3{ padding-top:20px; }
+
+#result { padding:10px; float:left; width:550px; border:1pt #959595 solid; margin:15px 0 0 0; background-color:#2c2c2c; color:#fff; display:none;}
+	#result p { text-align:center; margin:5px 0; }
+	#result a, #result a:visited{ color:#fff;}
+	#result a:hover{ text-decoration:none;} 
+
+#formimc input[type="text"]{ width: 180px; height:50px; float:left; text-align:center; }
+#formimc label{ float:left; margin:40px 10px 0 2px; }
+#formimc input[type="submit"]{ height:60px; float:left; margin-left:15px; width:100px; }
+
+.deactivated{ color:#aaa; font-size:1.4em; padding-top:5px; }
+.activated{ color:#000; font-size:3em; }
+
+#resultado_nr{ font-weight:bold; font-size:4em;}		
+#resultado_msg{ text-align:center; font-size:1.5em;}
+
+#tabela-resultado-imc{ width:572px; float:left; margin:15px 0 0 0; }
+#tabela-imc,  .tabela-imc-infantil{ width:400px; margin:15px 50px; }
+
+thead td.td-first-col{ border-right:2pt #fff solid;}
+.td-first-col { width:150px;}
+tr.selected-row { background-color: #fff771;}
+
+#calculo_imc{ float:right; width:350px; margin:0 20px 10px 0; height:290px; }
+#downloads{float:left; width:750px; text-align:center;}
+
+#footer { float:left; width:100%; margin:5px 0 10px 0; text-align:center;  border-top:1pt #666 solid; padding:10px 0 0 0;}
+	#footer p{ width:550px; display:block; margin:10px auto;}
+
+
+#resultado_imc h3, #form_imc h3{ margin-bottom:10px; text-align:center; color:#356AA0; }
+#resultado_compartilhar{ text-align:right; margin:0; }
+
+#resultado_imc{ background-color:#fff; padding: 5px; width:320px; border:1pt #959595 solid; line-height:30px; float:right; height:154px; }
+#resultado_par{ text-align:center; }
+
+#adsense-home-left{ width:160px; height:800px; position:absolute; top:5px; left:0; }
+#adsense-home-right-large{ width:300px; height:800px; position:absolute; top:5px; right:0; }
+#adsense-home-right{ width:160px; height:800px; position:absolute; top:5px; right:0; }
+#adsense-horizontal-top{ width:730px; height:110px; margin:15px 110px; }
+.adsense-links{ text-align:center; height:15px; margin-top:2px; }
+#adsense-square { float:right; width:336px; height:280px; padding-left:10px; }
+#adsense-home-bottom{ float:left; width:336px; height:280px; margin:10px 307px; }
+#adsense-home-middle, #adsense-home-bottom-rect{ float:left; width:336px; height:280px; margin:15 0 0 80px; }
+
+
+#resultado_ideal_min, #resultado_ideal_max{ font-weight:bold; }
+
+#form_imc div.data { float:left; width:60%; }
+#form_imc p.submit { float:left; width:40%; margin-top:20px; text-align:center; }
+/* #resultado_imc{	margin-top:10px; width:100%; float:center; text-align:center; font-weight:bold; } */
+#resultado{ }
+#mensagem_resultado{}
+/*#parag_resultado{ margin:0 auto; width:80%; border:1pt solid; background-color:#f8f7b6; }*/
+
+.msg_0{ color:#e63c3c; }
+.msg_1{ color:#861a1a; }
+.msg_2{ color:#3aba21; }
+.msg_3{ color:#c0a92c; }
+.msg_4{ color:#e63c3c; }
+.msg_5{ color:#e63c3c; }
+.msg_6{ color:#e63c3c; }
+
+#tab_imc2 { text-align:center; }
+.tab_imc_1{ background-color:#D99795; }
+.tab_imc_2{ background-color:#FFC000; }
+.tab_imc_3{ background-color:#92D050; }
+.tab_imc_4{ background-color:#FFC000; }
+.tab_imc_5{ background-color:#D99795; }
+.tab_imc_6{ background-color:#C00000; }
+.tab_imc_7{ background-color:#953735; }
+
+.cse-branding-right{ margin:25px 250px 0 250px !important; float:left; color:#000000; }
+#comments{ float:left; }
+
+.recomendacao_home{ font-size:0.8em; margin-top:10px; }
+
+.clear{ clear:both; }
+.center{ text-align:center; margin:15px 0 0 0;}
+.center a, .center a:visited{ color:#007dab; text-decoration:none; }
+.center a:hover{ text-decoration:underline; }
